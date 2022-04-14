@@ -248,8 +248,11 @@ footer {
 
 
 @media screen and (max-width: 768px) { 
-    .redes a {
-        font-size: 1.2rem;
+    .insta_wpp_flecha {
+        font-size: 2rem;
+      }
+      .redes {
+          font-size: 2rem;
       }
   }
 
