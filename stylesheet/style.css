@@ -336,51 +336,27 @@ footer {
     
 }
 
-.tienda .img {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    width: 400px;
-    height: 400px;
+.imagenestienda {
     padding: 10px;
-    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
     transition: all .4s ease-in;
-    --animation: animate__zoomIn;
+    --animation: animate__fadeInLeftBig;
     animation-duration: 1.5s;
 }
-
-.tienda .img:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    width: 410px;
-    height: 410px;
+.imagenestienda2 {
     padding: 10px;
-    margin: 0 25px;
-    border-radius: 5px;
-
+    height: 450px;
 }
+
+
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) { 
-    .tienda .img {
-        margin: 25px 90px;
-        width: 50%;
-        height: 50%;
-        display: inline-block;
-        text-align: center;
-        transition: all .5s ease-in;
-        
-    }
-
-    .tienda .img:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        width: 55%;
-        height: 55%;
+    .imagenestienda2 {
         padding: 10px;
-        margin: 0 25px;
-
-    }
-    .tienda .img:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        margin: 25px;
+        height: auto;
     }
 
   }
