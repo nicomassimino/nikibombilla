@@ -122,13 +122,11 @@ main .temporada_22  {
 
 
 .que_ofrecemos p{
-    margin: 10px;
     padding: 8px;
     text-align: left;
 }
 
 .que_ofrecemos{
-    margin: 10px;
     padding: 40px;
     text-align: left;
 }
@@ -145,12 +143,11 @@ main .temporada_22  {
     justify-content: center;
 }
 
-.img_carousel {
+.imgcarousel {
     padding: 10px;
-    display: grid;
-    border-radius: 5px;
     width: 450px;
     height: 600px;
+    border-radius: 5px;
 }
 
 /* MEDIA QUERIES */
@@ -186,15 +183,71 @@ main .temporada_22  {
         width: 100%;
         padding: 20px 50%;
     }
-    .img_carousel {
+/*     .imgcarousel {
         padding: 10px;
+    }
+    .carouselExampleIndicators {
+        padding: 10px;
+        width: 300px;
+        height: 400px;
+    } */
+    .carousel {
+        padding: 50px;
+        width: 500px;
+        height: 600px;
+    }
+  }
+
+  @media screen and (max-width: 428px) {
+
+    .main_footer_index {
         display: grid;
-        border-radius: 5px;
-        width: 100%;
-        height: 50%;
+        text-align: center;
     }
 
-  }
+    h2 {
+        width: 75%;
+        height: 5%;
+        display: flex;
+        justify-content: left;
+
+    }
+    h3 {
+        width: 75%;
+        height: 5%;
+        display: flex;
+        text-align: left;
+
+    }
+    .descripcion_sobretes {
+        width: 25%;
+        display: grid;
+    }
+    .mapa {
+        padding: 50px;
+        width: 400px;
+        height: 500px;
+        align-items: center;
+    }
+
+    .carousel {
+    padding: 50px;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+}
+    main .temporada_22  {
+    padding: 0;
+}
+
+    .donde_estamos {
+        padding: 0;
+    }
+
+    .que_ofrecemos {
+        padding: 0;
+    }
+}
 
   @keyframes aparecer {
     0% {
