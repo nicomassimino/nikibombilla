@@ -508,8 +508,13 @@ button[type = "reset"]:hover {
 
 }
 
-.li_recomendaciones {
+.recomendaciones {
     text-align: center;
+    padding: 7px;
+}
+
+.li_recomendaciones {
+    text-align: left;
     margin: 15px;
 }
 
@@ -526,9 +531,7 @@ ol {
 
 @media screen and (max-width: 768px) { 
     
-    h3 {
-        padding: 5px;
-    }
+
 
     .tabla_preguntas {
         padding: 5px;
@@ -536,7 +539,7 @@ ol {
     
     .recomendaciones {
         text-align: center;
-        justify-content: center;
+        padding: 10px;
     }
 
 
@@ -547,7 +550,9 @@ ol {
     ol {
         margin: 0 30px;
     }
-
+    h2 .preguntasyrecomendaciones {
+        padding: 5px;
+    }
   }
 
   @media screen and (max-width: 428px) { 
@@ -560,7 +565,7 @@ ol {
     
     .recomendaciones {
         text-align: center;
-        justify-content: center;
+        padding: 7px;
     }
 
 
