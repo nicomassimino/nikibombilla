@@ -379,10 +379,8 @@ footer {
 /* CONTACTO */
 
 .contacto {
-    padding: 5px;
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-items: center;
     animation-name: aparecer;
     animation-duration: 2s;
 }
@@ -487,12 +485,12 @@ button[type = "reset"]:hover {
     width: 100%;
     animation-duration: 1.5s;
     --animation: animate__fadeInLeftBig;
+
 }
 
 .table1 {
     animation-duration: 1.5s;
     --animation: animate__fadeInLeftBig;
-    
 }
 
 .recomendaciones h2 {
@@ -520,6 +518,11 @@ ol {
     text-align: center;
     margin: 0 35%
 }
+
+ th {
+    border-radius: 3px;
+}
+
 
 @media screen and (max-width: 768px) { 
     
