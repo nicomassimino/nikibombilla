@@ -1,0 +1,293 @@
+a {
+    color: black;
+    font-weight: bold ;
+    font-size: 1.6rem;
+}
+
+header {
+    background: $colorNikibombilla;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+.img {
+    animation-duration: 1.2s;
+    --animation: animate__bounceInDown;
+    border-radius: 5px;
+}
+}
+
+header nav .link {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    --animation: animate__flipInX;
+    animation-duration: 2s;
+    display: flex;
+    justify-content: end;
+&:hover {
+    color: rgb(78, 89, 90);
+    transform: scale(1.1) translateY(-2px);
+}
+}
+  
+.main_footer {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main_footer_index {
+    margin: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1 {
+    animation-name: aparecer;
+    animation-duration: 2s;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    animation-name: aparecer;
+    animation-duration: 2s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+p {
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+
+main .temporada_22  {
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.que_ofrecemos{
+    padding: 20px;
+    text-align: left;
+    p{
+        padding: 5px;
+        text-align: left;
+    }
+}
+
+
+.donde_estamos {
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    width: 100%;
+}
+
+
+.carousel {
+    padding: 10px;
+    width: 450px;
+    height: 600px;
+    border-radius: 5px;
+    display: grid;
+    text-align: center;
+}
+
+footer {
+    height: 7rem;
+    background: $colorNikibombilla;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+  .redes  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    font-size: 3rem;
+    border-radius: 5px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+  .insta_wpp_flecha {
+    font-size: 3rem;
+    color: black;
+   &:hover {
+    color: rgb(78, 89, 90);
+    transform: scale(1.1) translateY(-2px);
+  }
+}
+}
+}  
+
+@media screen and (max-width: 768px) {
+
+    .botonmenu {
+        display: grid;
+        justify-content: center;
+        width: 15%;
+    }
+
+    header .img {
+        height: 80px;
+    }
+
+    a {
+        font-size: 1rem;
+}
+  }
+
+@media screen and (max-width: 768px) { 
+    .main_footer_index {
+        display: grid;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        height: 50px;
+    }
+    h2 {
+        width: 100%;
+        height: 10px;
+    }
+
+    .descripcion_sobretes {
+        width: 50%;
+        padding: 10px; 
+        display: grid;
+    }
+    .mapa {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 50%;
+    }
+
+    .carousel {
+        padding: 20px;
+        width: 450px;
+        height: 600px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 428px) {
+
+    .main_footer_index {
+        display: grid;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        height: 50px;
+    }
+    h2 {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        text-align: center;
+
+    }
+    .mapa {
+        padding: 60px;
+        width: 400px;
+        height: 550px;
+    }
+
+    .carousel {
+    padding: 50px ;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+}
+    main .temporada_22  {
+    padding: 0;
+}
+
+    .donde_estamos {
+        padding: 0;
+    }
+
+    .que_ofrecemos {
+        padding: 0;
+    }
+    .tabla1 {
+        width: 380px;
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) { 
+    .insta_wpp_flecha {
+        font-size: 3rem;
+      .redes {
+          font-size: 3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) { 
+
+
+    h1 {
+        height: 50px;
+        width: 400px;
+    }
+    h2 {
+        width: 100%;
+        height: 10px;
+    }
+
+    .descripcion_sobretes {
+        width: 50%;
+        padding: 10px; 
+        display: grid;
+    }
+    .mapa {
+        display: flex;
+        justify-content: left;
+        padding: 10px;
+        width: 400px;
+    }
+
+    .temporada_22 {
+        width: 90%;
+    }
+
+    .que_ofrecemos {
+        width: 90%;
+    }
+    .carousel {
+        padding: 20px;
+    }
+    }
+
+  
+
+  @keyframes aparecer {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }

@@ -1,270 +1,107 @@
 * {
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-}
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth; }
 
 a {
-    color: black;
-    font-weight: bold ;
-    font-size: 1.6rem;
-}
+  color: black;
+  font-weight: bold;
+  font-size: 1.6rem; }
 
 header {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(31,186,204,1) 35%, rgba(0,245,255,1) 100%);
-    margin: 15px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-header .img {
+  background: linear-gradient(90deg, #020024 0%, #090979 0%, #1fbacc 35%, #00f5ff 100%);
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px; }
+  header .img {
     animation-duration: 1.2s;
     --animation: animate__bounceInDown;
-    border-radius: 5px;
-}
+    border-radius: 5px; }
 
 header nav .link {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    --animation: animate__flipInX;
-    animation-duration: 2s;
-    display: flex;
-    justify-content: end;
-}
-
-
-header nav li:hover {
-    color: rgb(78, 89, 90);
-    transform: scale(1.2) translateY(-2px);
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .botonmenu {
-        display: grid;
-        justify-content: center;
-        width: 15%;
-    }
-
-    header .img {
-        height: 80px;
-    }
-
-    a {
-        font-size: 1rem;
-}
-  }
-
-
-
-
-
-/* END HEADER */
-
-
-
-
-
-/* MAIN */
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  --animation: animate__flipInX;
+  animation-duration: 2s;
+  display: flex;
+  justify-content: end; }
+  header nav .link:hover {
+    color: #4e595a;
+    transform: scale(1.1) translateY(-2px); }
 
 .main_footer {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 15px;
-    padding: 10px;
-    border-radius: 5px;
-
-}
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px; }
 
 .main_footer_index {
-    margin: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    display: grid;
-    text-align: center;
-    border-radius: 5px;
-
-}
+  margin: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: grid;
+  text-align: center;
+  border-radius: 5px; }
 
 h1 {
-    animation-name: aparecer;
-    animation-duration: 2s;
-    color: black;
-    font-weight: bold;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+  animation-name: aparecer;
+  animation-duration: 2s;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
 
 h2 {
-    animation-name: aparecer;
-    animation-duration: 2s;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
+  animation-name: aparecer;
+  animation-duration: 2s;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
 
 p {
-    animation-name: aparecer;
-    animation-duration: 2s;
+  animation-name: aparecer;
+  animation-duration: 2s; }
 
+main .temporada_22 {
+  padding: 20px;
+  display: grid;
+  text-align: center;
+  justify-content: center; }
 
-}
-
-
-main .temporada_22  {
-    padding: 20px;
-    display: grid;
-    text-align: center;
-    justify-content: center;
-
-}
-
-
-.que_ofrecemos p{
+.que_ofrecemos {
+  padding: 20px;
+  text-align: left; }
+  .que_ofrecemos p {
     padding: 5px;
-    text-align: left;
-}
-
-.que_ofrecemos{
-    padding: 20px;
-    text-align: left;
-}
-
+    text-align: left; }
 
 .donde_estamos {
-    padding: 20px;
-    display: grid;
-    text-align: center;
-    width: 100%;
-}
-
+  padding: 20px;
+  display: grid;
+  text-align: center;
+  width: 100%; }
 
 .carousel {
-    padding: 10px;
-    width: 450px;
-    height: 600px;
-    border-radius: 5px;
-    display: grid;
-    text-align: center;
-
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) { 
-    .main_footer_index {
-        display: grid;
-        text-align: center;
-    }
-
-    h1 {
-        width: 100%;
-        height: 50px;
-    }
-    h2 {
-        width: 100%;
-        height: 10px;
-    }
-
-    .descripcion_sobretes {
-        width: 50%;
-        padding: 10px; 
-        display: grid;
-    }
-    .mapa {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 30px 50%;
-    }
-
-    .carousel {
-        padding: 20px;
-        width: 450px;
-        height: 600px;
-    }
-
-
-  }
-
-  @media screen and (max-width: 428px) {
-
-    .main_footer_index {
-        display: grid;
-        text-align: center;
-    }
-
-    h1 {
-        width: 100%;
-        height: 50px;
-    }
-    h2 {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        text-align: center;
-
-    }
-    .mapa {
-        padding: 60px;
-        width: 400px;
-        height: 550px;
-    }
-
-    .carousel {
-    padding: 50px ;
-    width: 400px;
-    height: 500px;
-    align-items: center;
-}
-    main .temporada_22  {
-    padding: 0;
-}
-
-    .donde_estamos {
-        padding: 0;
-    }
-
-    .que_ofrecemos {
-        padding: 0;
-    }
-    .tabla1 {
-        width: 380px;
-    }
-
-  }
-
-
-  @keyframes aparecer {
-    0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-  }
-
-/* END MAIN */
-
-/* FOOTER */
+  padding: 10px;
+  width: 450px;
+  height: 600px;
+  border-radius: 5px;
+  display: grid;
+  text-align: center; }
 
 footer {
-    height: 7rem;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(31,186,204,1) 35%, rgba(0,245,255,1) 100%);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all 0.5s ease-in;
-    border-radius: 5px;
-  }
-
-  .redes  {
+  height: 7rem;
+  background: linear-gradient(90deg, #020024 0%, #090979 0%, #1fbacc 35%, #00f5ff 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.5s ease-in;
+  border-radius: 5px; }
+  footer .redes {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -273,311 +110,281 @@ footer {
     font-size: 3rem;
     border-radius: 5px;
     animation-name: aparecer;
-    animation-duration: 2s;
-  }
-
-  .insta_wpp_flecha {
-    font-size: 3rem;
-    color: black;
-  }
-
-  .insta_wpp_flecha:hover {
-    color: rgb(78, 89, 90);
-    transform: scale(1.1) translateY(-2px);
-  }
-
-  
-
-/* MEDIA QUERIES */
-
-
-@media screen and (max-width: 768px) { 
-    .insta_wpp_flecha {
-        font-size: 3rem;
-      }
-      .redes {
-          font-size: 3rem;
-      }
-
-  }
-
-
-
-
-/* END FOOTER */
-
-/* NOSOTROS - NIKIBOMBILLA */
-
-.historia  {
-    text-align: center;
-}
-
-/* MEDIA QUERIES */
+    animation-duration: 2s; }
+    footer .redes .insta_wpp_flecha {
+      font-size: 3rem;
+      color: black; }
+      footer .redes .insta_wpp_flecha:hover {
+        color: #4e595a;
+        transform: scale(1.1) translateY(-2px); }
 
 @media screen and (max-width: 768px) {
-    .historia_niki { 
+  .botonmenu {
+    display: grid;
+    justify-content: center;
+    width: 15%; }
+  header .img {
+    height: 80px; }
+  a {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  .main_footer_index {
+    display: grid;
+    text-align: center; }
+  h1 {
     width: 100%;
-    padding: 10px; 
+    height: 50px; }
+  h2 {
+    width: 100%;
+    height: 10px; }
+  .descripcion_sobretes {
+    width: 50%;
+    padding: 10px;
     display: grid; }
-  }
+  .mapa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 50%; }
+  .carousel {
+    padding: 20px;
+    width: 450px;
+    height: 600px; } }
 
+@media screen and (max-width: 428px) {
+  .main_footer_index {
+    display: grid;
+    text-align: center; }
+  h1 {
+    width: 100%;
+    height: 50px; }
+  h2 {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    text-align: center; }
+  .mapa {
+    padding: 60px;
+    width: 400px;
+    height: 550px; }
+  .carousel {
+    padding: 50px;
+    width: 400px;
+    height: 500px;
+    align-items: center; }
+  main .temporada_22 {
+    padding: 0; }
+  .donde_estamos {
+    padding: 0; }
+  .que_ofrecemos {
+    padding: 0; }
+  .tabla1 {
+    width: 380px; } }
 
+@media screen and (max-width: 768px) {
+  .insta_wpp_flecha {
+    font-size: 3rem; }
+    .insta_wpp_flecha .redes {
+      font-size: 3rem; } }
 
-/* END NOSOTROS */
+@media screen and (max-width: 480px) {
+  h1 {
+    height: 50px;
+    width: 400px; }
+  h2 {
+    width: 100%;
+    height: 10px; }
+  .descripcion_sobretes {
+    width: 50%;
+    padding: 10px;
+    display: grid; }
+  .mapa {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    width: 400px; }
+  .temporada_22 {
+    width: 90%; }
+  .que_ofrecemos {
+    width: 90%; }
+  .carousel {
+    padding: 20px; } }
 
-/* TIENDA */
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.historia {
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .historia_niki {
+    width: 100%;
+    padding: 10px;
+    display: grid; } }
 
 .productos_titulo {
-    text-align: center;
-    
-}
+  text-align: center; }
 
 .imagenestienda {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .4s ease-in;
+  --animation: animate__fadeInLeftBig;
+  animation-duration: 1.5s; }
+  .imagenestienda .imagenestienda2 {
+    padding: 10px;
+    height: 450px; }
+
+@media screen and (max-width: 768px) {
+  .imagenestienda {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     transition: all .4s ease-in;
     --animation: animate__fadeInLeftBig;
-    animation-duration: 1.5s;
-}
-.imagenestienda2 {
+    animation-duration: 1.5s; }
+    .imagenestienda .imagenestienda2 {
+      padding: 10px;
+      height: 200px; } }
+
+@media screen and (max-width: 428px) {
+  .imagenestienda2 {
     padding: 10px;
-    height: 450px;
-}
+    height: auto; } }
 
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) { 
-    .imagenestienda {
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        transition: all .4s ease-in;
-        --animation: animate__fadeInLeftBig;
-        animation-duration: 1.5s;
-    }
-    .imagenestienda2 {
-        padding: 10px;
-        height: 200px;
-    }
-
-  }
-
-  @media screen and (max-width: 428px) { 
-    .imagenestienda2 {
-        padding: 10px;
-        height: auto;
-    }
-
-  }
-
-
-/* END TIENDA */
-
-/* CONTACTO */
-
-.contacto {
+@media screen and (max-width: 480px) {
+  .imagenestienda {
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
-}
-
-.contacto_titulo {
-    display: flex;
-    justify-content: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
-
-}
-
-.contacto_items {
-    padding: 10px;
-    border-radius: 5px;
-
-}
-
-input {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-}
-
-textarea {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-
-}
-
-button {
-    padding: 10px;
-    margin: 5px; 
-    border-radius: 5px;
-    width: 25%;
-    display: flex;
-    text-align: center;
-}
-
-button[type = "submit"] {
-    background-color: rgb(172, 172, 172);
-    transition: all .3s ease-in;
-    color: black;
-}
-
-button[type = "submit"]:hover {
-    background-color: rgb(50, 201, 201, 0.925);
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-button[type = "reset"] {
-    background-color: white;
-    border: 1px solid black;
-    transition: all .3s ease-in;
-    color: black;
-
-}
-
-button[type = "reset"]:hover {
-    background-color: rgb(50, 201, 201, 0.925);
-    color: black;
-    cursor: pointer;
-}
-
-
-@media screen and (max-width: 768px) { 
-    .contacto_titulo {
-        display: flex;
-        justify-content: left;
-    }
-    .contacto {
-        padding: 15px;
-        justify-content: center;
-        align-items: center;
-        animation-name: aparecer;
-        animation-duration: 2s;
-    }
-    
-    .contacto1 {
-        display: grid;
-        justify-content: center;
-    
-    }
-  }
-
-/* END CONTACTO */
-
-/* PREGUNTAS FRECUENTES */
-
- .tabla {
-    margin: 15px;
-    padding: 10px;
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    animation-duration: 1.5s;
+    justify-content: space-between;
+    transition: all .4s ease-in;
     --animation: animate__fadeInLeftBig;
+    animation-duration: 1.5s; }
+    .imagenestienda .imagenestienda2 {
+      padding: 10px;
+      height: 320px; } }
 
-}
-
-.table1 {
+.tabla {
+  margin: 15px;
+  padding: 10px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  animation-duration: 1.5s;
+  --animation: animate__fadeInLeftBig; }
+  .tabla .table1 {
     animation-duration: 1.5s;
-    --animation: animate__fadeInLeftBig;
-}
+    --animation: animate__fadeInLeftBig; }
+    .tabla .table1 th {
+      border-radius: 3px; }
 
 .recomendaciones h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    animation-duration: 1.5s;
-    --animation: animate__fadeInLeftBig;
-}
+  text-align: center;
+  font-size: 1.5rem;
+  animation-duration: 1.5s;
+  --animation: animate__fadeInLeftBig; }
 
 .tabla_preguntas {
-    text-align: center;
-    animation-duration: 1.5s;
-    --animation: animate__fadeInLeftBig;
-    border-radius: 5px;
-
-}
+  text-align: center;
+  animation-duration: 1.5s;
+  --animation: animate__fadeInLeftBig;
+  border-radius: 5px; }
 
 .recomendaciones {
-    text-align: center;
-    padding: 7px;
-}
-
-.li_recomendaciones {
+  text-align: center;
+  padding: 7px; }
+  .recomendaciones .li_recomendaciones {
     text-align: left;
-    margin: 15px;
-}
+    margin: 15px; }
+    .recomendaciones .li_recomendaciones ol {
+      text-align: center;
+      margin: 0 35%; }
 
-
-ol {
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .tabla_preguntas {
+    padding: 5px; }
+  .recomendaciones {
     text-align: center;
-    margin: 0 35%
-}
+    padding: 10px; }
+    .recomendaciones .li_recomendaciones {
+      text-align: left; }
+      .recomendaciones .li_recomendaciones ol {
+        margin: 0 30px; }
+  h2 .preguntasyrecomendaciones {
+    padding: 5px; } }
 
- th {
-    border-radius: 3px;
-}
+@media screen and (max-width: 428px) {
+  .tabla {
+    width: 350px; }
+  .recomendaciones {
+    text-align: center;
+    padding: 7px; }
+    .recomendaciones .li_recomendaciones {
+      text-align: left; }
+      .recomendaciones .li_recomendaciones ol {
+        margin: 0 30px; } }
 
+.contacto {
+  display: flex;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 2s; }
 
-@media screen and (max-width: 768px) { 
-    
+.contacto_titulo {
+  display: flex;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 2s; }
 
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
 
-    .tabla_preguntas {
-        padding: 5px;
-    }
-    
-    .recomendaciones {
-        text-align: center;
-        padding: 10px;
-    }
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 25%;
+  display: flex;
+  text-align: center; }
 
+button[type="submit"] {
+  background-color: #acacac;
+  transition: all .3s ease-in;
+  color: black; }
+  button[type="submit"]:hover {
+    background-color: rgba(50, 201, 201, 0.925);
+    border: 1px solid black;
+    cursor: pointer; }
 
-    .li_recomendaciones {
-        text-align: left;
-    }
-    
-    ol {
-        margin: 0 30px;
-    }
-    h2 .preguntasyrecomendaciones {
-        padding: 5px;
-    }
-  }
+button[type="reset"] {
+  background-color: white;
+  border: 1px solid black;
+  transition: all .3s ease-in;
+  color: black; }
+  button[type="reset"]:hover {
+    background-color: rgba(50, 201, 201, 0.925);
+    color: black;
+    cursor: pointer; }
 
-  @media screen and (max-width: 428px) { 
-    
-
-
-    .tabla {
-        width: 350px;
-    }
-    
-    .recomendaciones {
-        text-align: center;
-        padding: 7px;
-    }
-
-
-    .li_recomendaciones {
-        text-align: left;
-    }
-    
-    ol {
-        margin: 0 30px;
-    }
-
-  }
-
-
-/* END PREGUNTAS FRECUENTES */
+@media screen and (max-width: 768px) {
+  .contacto_titulo {
+    display: flex;
+    justify-content: left; }
+  .contacto {
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    animation-name: aparecer;
+    animation-duration: 2s; } }

@@ -1,0 +1,55 @@
+.productos_titulo {
+    text-align: center;
+    
+}
+
+.imagenestienda {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .4s ease-in;
+    --animation: animate__fadeInLeftBig;
+    animation-duration: 1.5s;
+.imagenestienda2 {
+    padding: 10px;
+    height: 450px;
+}
+}
+
+@media screen and (max-width: 768px) { 
+    .imagenestienda {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        transition: all .4s ease-in;
+        --animation: animate__fadeInLeftBig;
+        animation-duration: 1.5s;
+    .imagenestienda2 {
+        padding: 10px;
+        height: 200px;
+    }
+}
+}
+
+  @media screen and (max-width: 428px) { 
+    .imagenestienda2 {
+        padding: 10px;
+        height: auto;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) { 
+    .imagenestienda {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        transition: all .4s ease-in;
+        --animation: animate__fadeInLeftBig;
+        animation-duration: 1.5s;
+    .imagenestienda2 {
+        padding: 10px;
+        height: 320px;
+    }
+}
+}

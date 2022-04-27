@@ -1,0 +1,10 @@
+.historia  {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .historia_niki { 
+    width: 100%;
+    padding: 10px; 
+    display: grid; }
+  }

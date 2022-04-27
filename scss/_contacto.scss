@@ -1,0 +1,70 @@
+.contacto {
+    display: flex;
+    justify-content: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.contacto_titulo {
+    display: flex;
+    justify-content: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 5px;
+    width: 25%;
+    display: flex;
+    text-align: center;
+}
+
+button[type = "submit"] {
+    background-color: rgb(172, 172, 172);
+    transition: all .3s ease-in;
+    color: black;
+&:hover {
+    background-color: rgba(50, 201, 201, 0.925);
+    border: 1px solid black;
+    cursor: pointer;
+}
+}
+
+button[type = "reset"] {
+    background-color: white;
+    border: 1px solid black;
+    transition: all .3s ease-in;
+    color: black;
+&:hover {
+    background-color: rgba(50, 201, 201, 0.925);
+    color: black;
+    cursor: pointer;
+}
+}
+
+
+@media screen and (max-width: 768px) { 
+    .contacto_titulo {
+        display: flex;
+        justify-content: left;
+    }
+    .contacto {
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        animation-name: aparecer;
+        animation-duration: 2s;
+    }
+  }

@@ -1,0 +1,87 @@
+.tabla {
+    margin: 15px;
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    animation-duration: 1.5s;
+    --animation: animate__fadeInLeftBig;
+.table1 {
+    animation-duration: 1.5s;
+    --animation: animate__fadeInLeftBig;
+    th {
+        border-radius: 3px;
+}
+}
+}
+
+.recomendaciones h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    animation-duration: 1.5s;
+    --animation: animate__fadeInLeftBig;
+}
+
+.tabla_preguntas {
+    text-align: center;
+    animation-duration: 1.5s;
+    --animation: animate__fadeInLeftBig;
+    border-radius: 5px;
+
+}
+
+.recomendaciones {
+    text-align: center;
+    padding: 7px;
+.li_recomendaciones {
+    text-align: left;
+    margin: 15px;
+    ol {
+        text-align: center;
+        margin: 0 35%
+}
+}
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) { 
+
+    .tabla_preguntas {
+        padding: 5px;
+    }
+    
+    .recomendaciones {
+        text-align: center;
+        padding: 10px;
+    .li_recomendaciones {
+        text-align: left; 
+    ol {
+        margin: 0 30px;
+    }
+    }
+    }
+
+    h2 .preguntasyrecomendaciones {
+        padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 428px) { 
+
+    .tabla {
+        width: 350px;
+    }
+    
+    .recomendaciones {
+        text-align: center;
+        padding: 7px;
+    .li_recomendaciones {
+        text-align: left;
+    ol {
+        margin: 0 30px;
+    }
+}
+}
+}
