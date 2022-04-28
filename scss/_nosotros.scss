@@ -1,10 +1,14 @@
 .historia  {
-    text-align: center;
+    text-align: map-get($estilos, text-align);
 }
 
+body {
+@if $vista == tablet {
 @media screen and (max-width: 768px) {
     .historia_niki { 
     width: 100%;
     padding: 10px; 
     display: grid; }
   }
+}
+}

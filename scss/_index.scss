@@ -1,28 +1,28 @@
 a {
-    color: black;
+    color: map-get($estilos, colornegro);
     font-weight: bold ;
     font-size: 1.6rem;
 }
 
 header {
     background: $colorNikibombilla;
-    margin: 15px;
+    @include margen (15px);
     padding: 10px;
-    border-radius: 5px;
+    @include border (5px);
 .img {
     animation-duration: 1.2s;
     --animation: animate__bounceInDown;
-    border-radius: 5px;
+    @include border (5px);
 }
 }
 
 header nav .link {
     padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
+    @include margen (5px);
+    @include border (5px);
     --animation: animate__flipInX;
     animation-duration: 2s;
-    display: flex;
+    display: map-get($estilos, contenidoflex);
     justify-content: end;
 &:hover {
     color: rgb(78, 89, 90);
@@ -32,51 +32,51 @@ header nav .link {
   
 .main_footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 15px;
+    @include margen (15px);
     padding: 10px;
-    border-radius: 5px;
+    @include border (5px);
 }
 
 .main_footer_index {
-    margin: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    @extend .main_footer;
     display: grid;
-    text-align: center;
-    border-radius: 5px;
+    text-align: map-get($estilos, text-align);
 }
 
+
+
+
 h1 {
-    animation-name: aparecer;
-    animation-duration: 2s;
-    color: black;
-    font-weight: bold;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    animation-name: map-get($estilos, nombre-animac);
+    animation-duration: map-get($estilos, duracion-animac);
+    color: map-get($estilos, colornegro);
+    font-weight: map-get($estilos, fuente);
+    padding: map-get($estilos, padding15);
+    display: map-get($estilos, contenidoflex);
+    justify-content: map-get($estilos, justify-content);
+    text-align: map-get($estilos, text-align);
 }
 
 h2 {
-    animation-name: aparecer;
-    animation-duration: 2s;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    animation-name: map-get($estilos, nombre-animac);
+    animation-duration: map-get($estilos, duracion-animac);
+    display: map-get($estilos, contenidoflex);
+    justify-content: map-get($estilos, justify-content);
+    text-align: map-get($estilos, text-align);
 }
 
 
 p {
-    animation-name: aparecer;
-    animation-duration: 2s;
+    animation-name: map-get($estilos, nombre-animac);
+    animation-duration: map-get($estilos, duracion-animac);
 }
 
 
 main .temporada_22  {
     padding: 20px;
     display: grid;
-    text-align: center;
-    justify-content: center;
+    text-align: map-get($estilos, text-align);
+    justify-content: map-get($estilos, justify-content);
 
 }
 
@@ -93,41 +93,40 @@ main .temporada_22  {
 .donde_estamos {
     padding: 20px;
     display: grid;
-    text-align: center;
+    text-align: map-get($estilos, text-align);
     width: 100%;
 }
-
 
 .carousel {
     padding: 10px;
     width: 450px;
     height: 600px;
-    border-radius: 5px;
+    @include border (5px);
     display: grid;
-    text-align: center;
+    text-align: map-get($estilos, text-align);
 }
 
 footer {
     height: 7rem;
     background: $colorNikibombilla;
-    display: flex;
+    display: map-get($estilos, contenidoflex);
     justify-content: space-evenly;
     align-items: center;
     transition: all 0.5s ease-in;
-    border-radius: 5px;
+    @include border (5px);
   .redes  {
-    display: flex;
+    display: map-get($estilos, contenidoflex);
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     max-width: 500px;
     font-size: 3rem;
-    border-radius: 5px;
+    @include border (5px);
     animation-name: aparecer;
     animation-duration: 2s;
   .insta_wpp_flecha {
     font-size: 3rem;
-    color: black;
+    color: map-get($estilos, colornegro);
    &:hover {
     color: rgb(78, 89, 90);
     transform: scale(1.1) translateY(-2px);
@@ -136,11 +135,20 @@ footer {
 }
 }  
 
-@media screen and (max-width: 768px) {
+$vista: desktop;
 
+  body {
+      @if $vista == tablet {
+  @media screen and (max-width: 768px) { 
+    .insta_wpp_flecha {
+        font-size: 3rem;
+      .redes {
+          font-size: 3rem;
+      }
+    }
     .botonmenu {
         display: grid;
-        justify-content: center;
+        justify-content: map-get($estilos, justify-content);
         width: 15%;
     }
 
@@ -150,13 +158,10 @@ footer {
 
     a {
         font-size: 1rem;
-}
-  }
-
-@media screen and (max-width: 768px) { 
+    }
     .main_footer_index {
         display: grid;
-        text-align: center;
+        text-align: map-get($estilos, text-align);
     }
 
     h1 {
@@ -174,7 +179,7 @@ footer {
         display: grid;
     }
     .mapa {
-        display: flex;
+        display: map-get($estilos, contenidoflex);
         justify-content: center;
         width: 100%;
         padding: 30px 50%;
@@ -185,15 +190,22 @@ footer {
         width: 450px;
         height: 600px;
     }
-
-
   }
+    .insta_wpp_flecha {
+        font-size: 3rem;
+      .redes {
+          font-size: 3rem;
+      }
+    }
+}
 
+
+@else if $vista == mobile {
   @media screen and (max-width: 428px) {
 
     .main_footer_index {
         display: grid;
-        text-align: center;
+        text-align: map-get($estilos, text-align);
     }
 
     h1 {
@@ -203,8 +215,8 @@ footer {
     h2 {
         width: 100%;
         height: 20px;
-        display: flex;
-        text-align: center;
+        display: map-get($estilos, contenidoflex);
+        text-align: map-get($estilos, text-align);
 
     }
     .mapa {
@@ -218,10 +230,10 @@ footer {
     width: 400px;
     height: 500px;
     align-items: center;
-}
+    }
     main .temporada_22  {
     padding: 0;
-}
+    }
 
     .donde_estamos {
         padding: 0;
@@ -233,25 +245,17 @@ footer {
     .tabla1 {
         width: 380px;
     }
-
   }
-  
-  @media screen and (max-width: 768px) { 
-    .insta_wpp_flecha {
-        font-size: 3rem;
-      .redes {
-          font-size: 3rem;
-      }
-    }
-  }
+}
 
+  @else if $vista == mobile2 {
   @media screen and (max-width: 480px) { 
-
 
     h1 {
         height: 50px;
         width: 400px;
     }
+
     h2 {
         width: 100%;
         height: 10px;
@@ -263,7 +267,7 @@ footer {
         display: grid;
     }
     .mapa {
-        display: flex;
+        display: map-get($estilos, contenidoflex);
         justify-content: left;
         padding: 10px;
         width: 400px;
@@ -279,15 +283,15 @@ footer {
     .carousel {
         padding: 20px;
     }
-    }
+}
+}
+}
 
-  
-
-  @keyframes aparecer {
+@keyframes aparecer {
     0% {
         opacity: 0;
       }
       100% {
         opacity: 1;
       }
-  }
+} 

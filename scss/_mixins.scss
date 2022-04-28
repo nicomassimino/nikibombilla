@@ -1,0 +1,7 @@
+@mixin margen($margin) {
+    margin: $margin;    
+}
+
+@mixin borde($border-radius) {
+    border-radius: $border-radius;    
+}

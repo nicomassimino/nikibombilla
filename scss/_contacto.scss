@@ -1,40 +1,39 @@
 .contacto {
-    display: flex;
-    justify-content: center;
+    display: map-get($estilos, contenidoflex);
+    justify-content: map-get($estilos, justify-content);
     animation-name: aparecer;
     animation-duration: 2s;
 }
 
 .contacto_titulo {
-    display: flex;
-    justify-content: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
-
+@extend .contacto
 }
+
+
 
 input {
     padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
+    @include margen (5px);
+    @include border (5px);
     display: grid;
-    justify-content: center;
+    justify-content: map-get($estilos, justify-content);
     align-items: center;
 }
 
 button {
     padding: 10px;
-    margin: 5px; 
-    border-radius: 5px;
+    @include margen (5px); 
+    @include border (5px);
     width: 25%;
-    display: flex;
-    text-align: center;
+    display: map-get($estilos, contenidoflex);
+    text-align: map-get($estilos, text-align);
 }
 
 button[type = "submit"] {
     background-color: rgb(172, 172, 172);
     transition: all .3s ease-in;
-    color: black;
+    color: map-get($estilos, colornegro);
+
 &:hover {
     background-color: rgba(50, 201, 201, 0.925);
     border: 1px solid black;
@@ -46,25 +45,29 @@ button[type = "reset"] {
     background-color: white;
     border: 1px solid black;
     transition: all .3s ease-in;
-    color: black;
+    color: map-get($estilos, colornegro);
 &:hover {
     background-color: rgba(50, 201, 201, 0.925);
-    color: black;
+    color: map-get($estilos, colornegro);
     cursor: pointer;
 }
 }
-
+body {
+@if $vista == tablet {
 
 @media screen and (max-width: 768px) { 
     .contacto_titulo {
-        display: flex;
+        display: map-get($estilos, contenidoflex);
         justify-content: left;
     }
     .contacto {
         padding: 15px;
-        justify-content: center;
+        justify-content: map-get($estilos, justify-content);
         align-items: center;
         animation-name: aparecer;
         animation-duration: 2s;
     }
   }
+}
+}
+

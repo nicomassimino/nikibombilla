@@ -1,5 +1,5 @@
 .productos_titulo {
-    text-align: center;
+    text-align: map-get($estilos, text-align);
     
 }
 
@@ -16,6 +16,9 @@
 }
 }
 
+
+body {
+    @if $vista == tablet {
 @media screen and (max-width: 768px) { 
     .imagenestienda {
         padding: 10px;
@@ -30,15 +33,18 @@
     }
 }
 }
+}
 
+@else if $vista == mobile {
   @media screen and (max-width: 428px) { 
     .imagenestienda2 {
         padding: 10px;
         height: auto;
     }
-
   }
+}
 
+@else if $vista == mobile2 {
   @media screen and (max-width: 480px) { 
     .imagenestienda {
         padding: 10px;
@@ -51,5 +57,7 @@
         padding: 10px;
         height: 320px;
     }
+}
+}
 }
 }
