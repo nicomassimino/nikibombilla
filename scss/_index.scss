@@ -16,6 +16,8 @@ header {
 }
 }
 
+
+
 header nav .link {
     padding: 5px;
     @include margen (5px);
@@ -73,7 +75,7 @@ p {
 
 
 main .temporada_22  {
-    padding: 20px;
+    padding: 5px;
     display: grid;
     text-align: map-get($estilos, text-align);
     justify-content: map-get($estilos, justify-content);
@@ -86,6 +88,9 @@ main .temporada_22  {
     p{
         padding: 5px;
         text-align: left;
+    }
+    th {
+        border-radius: 3px;
     }
 }
 
