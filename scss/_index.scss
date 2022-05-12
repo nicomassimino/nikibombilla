@@ -173,7 +173,7 @@ $vista: desktop;
     }
     h2 {
         width: 100%;
-        height: 10px;
+        height: 30px;
     }
 
     .descripcion_sobretes {
@@ -215,7 +215,7 @@ $vista: desktop;
     }
     h2 {
         width: 100%;
-        height: 20px;
+        height: 30px;
         display: map-get($estilos, contenidoflex);
         text-align: map-get($estilos, text-align);
 
@@ -250,13 +250,11 @@ $vista: desktop;
   @media screen and (max-width: 480px) { 
 
     h1 {
-        height: 50px;
         width: 400px;
     }
 
     h2 {
         width: 100%;
-        height: 10px;
     }
 
     .descripcion_sobretes {
