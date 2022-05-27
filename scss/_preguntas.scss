@@ -35,7 +35,7 @@
     padding: 7px;
 .li_recomendaciones {
     text-align: left;
-    @include margen (15px);
+    @include margen (5px);
     ol {
         text-align: map-get($estilos, text-align);
         margin: 0 35%;
